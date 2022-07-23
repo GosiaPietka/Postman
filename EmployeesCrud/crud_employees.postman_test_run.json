@@ -1,0 +1,437 @@
+{
+	"id": "e26a435e-9490-4c8e-8245-b3df91d00700",
+	"name": "crud_employees",
+	"timestamp": "2022-07-23T20:34:03.688Z",
+	"collection_id": "18943841-8aab4414-63dc-4a0b-b84e-273ed30736e2",
+	"folder_id": 0,
+	"environment_id": "18943841-94d3f5e4-e8e3-4e50-b967-832b2e2c1576",
+	"totalPass": 23,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "bdd573a8-69ed-47da-8408-5cb5d6fc4066",
+			"name": "Get all employees",
+			"url": "http://localhost:3000/employees",
+			"time": 66,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Should return not empaty list": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return not empaty list": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				66
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Should return not empaty list": true
+				}
+			]
+		},
+		{
+			"id": "9ba36ba9-610b-48da-9fb8-e657395750ad",
+			"name": "create new employes",
+			"url": "http://localhost:3000/employees",
+			"time": 37,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Should return correct First name": true,
+				"Should return correct Last Name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct First name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct Last Name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				37
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Should return correct First name": true,
+					"Should return correct Last Name": true
+				}
+			]
+		},
+		{
+			"id": "0081136d-4d3d-448c-b7f2-9ca1f9de8fbd",
+			"name": "Get employe with id",
+			"url": "http://localhost:3000/employees/47",
+			"time": 34,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Should return not empaty list": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return not empaty list": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Should return not empaty list": true
+				}
+			]
+		},
+		{
+			"id": "4bb444e2-0dc9-464d-8f30-24c640ef472c",
+			"name": "Get empluyes with email",
+			"url": "http://localhost:3000/employees?email=bczarny@testerprogramuje.pl",
+			"time": 38,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Should return not empty listy": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return not empty listy": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				38
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Should return not empty listy": true
+				}
+			]
+		},
+		{
+			"id": "8c1e5c25-3a8b-451f-846f-a360c18ba1a7",
+			"name": "Put employ first name and last name",
+			"url": "http://localhost:3000/employees/47",
+			"time": 34,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Should return change first name and last name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return change first name and last name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Should return change first name and last name": true
+				}
+			]
+		},
+		{
+			"id": "6c45eac4-ce78-4493-aaaf-f8692af7e346",
+			"name": "patch employe",
+			"url": "http://localhost:3000/employees/47",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Should change email and website": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should change email and website": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				36
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Should change email and website": true
+				}
+			]
+		},
+		{
+			"id": "48b5c63e-b091-4263-9f3c-79a8c1d43c3c",
+			"name": "delete employe Copy",
+			"url": "http://localhost:3000/employees/47",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				36
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6e39fbaa-7eb0-4966-bd47-ad1971d22556",
+			"name": "delete nonexistent employe",
+			"url": "http://localhost:3000/employees/47",
+			"time": 34,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "e04ccf0f-8864-4927-9dda-cc4a14e89999",
+			"name": "emplye with email from txt",
+			"url": "http://localhost:3000/employees",
+			"time": 35,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Should return correct email": false
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct email": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				35
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Should return correct email": false
+				}
+			]
+		},
+		{
+			"id": "2acad1dc-1d1d-4fb7-841a-cd2688c92304",
+			"name": "POST employee random ",
+			"url": "http://localhost:3000/employees",
+			"time": 36,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Should return correct firstName": true,
+				"Should return correct lastName": true,
+				"Should return correct userName": true,
+				"Should return correct phone": true,
+				"Should return correct email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct firstName": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct lastName": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct userName": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct phone": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Should return correct email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				36
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Should return correct firstName": true,
+					"Should return correct lastName": true,
+					"Should return correct userName": true,
+					"Should return correct phone": true,
+					"Should return correct email": true
+				}
+			]
+		},
+		{
+			"id": "e66fb02a-86bb-4874-863f-8b919be2160d",
+			"name": "delete employee",
+			"url": "http://localhost:3000/employees/48",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 412,
+	"collection": {
+		"requests": [
+			{
+				"id": "bdd573a8-69ed-47da-8408-5cb5d6fc4066",
+				"method": "GET"
+			},
+			{
+				"id": "9ba36ba9-610b-48da-9fb8-e657395750ad",
+				"method": "POST"
+			},
+			{
+				"id": "0081136d-4d3d-448c-b7f2-9ca1f9de8fbd",
+				"method": "GET"
+			},
+			{
+				"id": "4bb444e2-0dc9-464d-8f30-24c640ef472c",
+				"method": "GET"
+			},
+			{
+				"id": "8c1e5c25-3a8b-451f-846f-a360c18ba1a7",
+				"method": "PUT"
+			},
+			{
+				"id": "6c45eac4-ce78-4493-aaaf-f8692af7e346",
+				"method": "PATCH"
+			},
+			{
+				"id": "48b5c63e-b091-4263-9f3c-79a8c1d43c3c",
+				"method": "DELETE"
+			},
+			{
+				"id": "6e39fbaa-7eb0-4966-bd47-ad1971d22556",
+				"method": "DELETE"
+			},
+			{
+				"id": "e04ccf0f-8864-4927-9dda-cc4a14e89999",
+				"method": "POST"
+			},
+			{
+				"id": "2acad1dc-1d1d-4fb7-841a-cd2688c92304",
+				"method": "POST"
+			},
+			{
+				"id": "e66fb02a-86bb-4874-863f-8b919be2160d",
+				"method": "DELETE"
+			}
+		]
+	}
+}
